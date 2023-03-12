@@ -12,24 +12,23 @@
 #
 # The diamond should have as many lines as the number was
 
-draw_diamond = int(input("Please enter the number to draw pyramid"))
+draw_diamond = int(input("Please enter the number to draw pyramid : "))
 
-k = 2*draw_diamond - 2
-
-for i in range (0, draw_diamond):
-    for j in range(0, k):
-        print(end= " ")
-    k = k - 1
-    for j in range(0, i+1):
-        print("* ", end="")
-    print("\r")
-
-k = draw_diamond - 2
-
-for i in range ( draw_diamond , -1, -1):
-    for j in range(k , 0 , -1):
-        print(end= " ")
-    k = k + 1
-    for j in range(0, i+1):
-        print("* ", end="")
-    print("\r")
+for i in range (0, draw_diamond//2+1):
+    number_of_stras = i*2+1
+    number_of_space= draw_diamond - number_of_stras
+    line=""
+    for j in range(0, int(number_of_space/2)):
+        line = line + " "
+    for k in range(0, number_of_stras):
+        line = line + "*"
+    print(line)
+for l in range (0, draw_diamond//2+1):
+    number_of_stras = (draw_diamond-l)-l
+    number_of_space= draw_diamond - number_of_stras
+    line=""
+    for m in range(0, int(number_of_space/2)):
+        line = line + " "
+    for n in range(0, number_of_stras):
+        line = line + "*"
+    print(line)
