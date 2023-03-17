@@ -6,5 +6,5 @@
 
 numbers = [3, 4, 5, 6, 7]
 for ix, val in enumerate(numbers):
-    numbers[ix] = numbers[ix]*2
+    numbers[ix] *= 2
 print(numbers)
