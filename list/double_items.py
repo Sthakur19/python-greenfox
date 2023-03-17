@@ -5,8 +5,6 @@
 #   [6, 8, 10, 12, 14]
 
 numbers = [3, 4, 5, 6, 7]
-
-doubleNumber = []
-for val in numbers:
-    doubleNumber.append(val*2)
-print(doubleNumber)
+for ix, val in enumerate(numbers):
+    numbers[ix] = numbers[ix]*2
+print(numbers)
