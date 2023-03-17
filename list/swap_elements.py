@@ -6,9 +6,11 @@
 
 orders = ["first", "second", "third"]
 
-temp = orders[0]
+#traditional way
+# temp = orders[0]
+# orders[0] = orders[2]
+# orders[2] = temp
 
-orders[0] = orders[2]
-orders[2] = temp
-
+#alternative way
+orders[0], orders[2] = orders[2], orders[0]
 print(orders)
