@@ -11,8 +11,6 @@
 animals = ["koal", "pand", "zebr", "anacond", "bo", "chinchill", "cobr",
   "gorill", "hyen", "hydr", "iguan", "impal", "pum", "tarantul", "piranh"]
 
-fixed = []
-for val in animals:
-    temp = val + str("a")
-    fixed.append(temp)
-print(fixed)
+for ix, val in enumerate(animals):
+    animals[ix] = animals[ix] + 'a'
+print(animals)
