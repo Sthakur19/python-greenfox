@@ -18,5 +18,6 @@ colors = [
     ["orchid", "violet", "pink", "hot pink"]
 ]
 
-single_array = colors[0] + colors[1] + colors[2]
-print(single_array)
+for i in range(0 , 1):
+    for j in range(0, len(colors)):
+        print(*colors[j] , sep=", ")
