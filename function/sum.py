@@ -9,5 +9,5 @@ def sum(enter_sum_number):
     for i in range (0, enter_sum_number+1):
         total = total + i
     return total 
-
+ 
 print(sum(enter_sum_number))  
