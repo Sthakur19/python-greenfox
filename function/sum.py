@@ -8,6 +8,6 @@ def sum(enter_sum_number):
     total = 0
     for i in range (0, enter_sum_number+1):
         total = total + i
-    return total
+    return total 
 
 print(sum(enter_sum_number))
