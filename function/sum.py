@@ -10,4 +10,4 @@ def sum(enter_sum_number):
         total = total + i
     return total 
 
-print(sum(enter_sum_number)) 
+print(sum(enter_sum_number))  
