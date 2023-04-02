@@ -35,7 +35,6 @@ else:
     print("false")
 
 list_B.remove("Durian")
-
 list_A.insert(4,"Kiwifruit")
 
 if len(list_A) == len(list_B):
@@ -43,12 +42,10 @@ if len(list_A) == len(list_B):
 else:
     print("false")
 
+print(list_B.index("Durian")) if "Durian" in list_B else print("-1")
+
 index_avacodo_list_A = list_A.index("Avocado")
-# index_durian_list_B = list_B.index("Durian")
-
 print(index_avacodo_list_A)
-# print(index_durian_list_B)
-
 list_B.extend(["Passion Fruit" ,"Pomelo"])
 print(list_A[2])
 print(list_A)
