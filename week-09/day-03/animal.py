@@ -12,3 +12,8 @@ class Animal:
     def play(self):
         self.hunger -= 1
         self.drink -= 1 
+
+my_animal = Animal()
+my_animal.eat()
+my_animal.drink()
+my_animal.play()
